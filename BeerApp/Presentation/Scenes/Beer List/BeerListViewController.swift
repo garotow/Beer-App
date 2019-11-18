@@ -22,7 +22,7 @@ class BeerListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = BeerListPresenter(view: self) as BeerListPresenterProtocol
+        presenter = BeerListPresenter(view: self, beerRepository: BeerRepository()) as BeerListPresenterProtocol
         adapter = BeerListAdapter(tableView: tableView)
         setupUI()
         setupObservables()
@@ -39,9 +39,10 @@ class BeerListViewController: UIViewController {
     }
     
     func setupUI() {
+        tableView.allowsSelection = false
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        // Add constraints (full screen)
+        // Add full screen constraints
         view.addConstraints([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),

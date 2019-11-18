@@ -25,7 +25,7 @@ class BeerTableViewCell: UITableViewCell {
     
     func configure(with beer: Beer) {
         nameLabel.text = beer.name
-        abvLabel.text = beer.abv
+        abvLabel.text = "\(beer.abv)"
     }
     
     

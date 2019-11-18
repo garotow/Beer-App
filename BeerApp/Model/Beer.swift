@@ -10,14 +10,28 @@ import Foundation
 
 
 struct Beer {
+    var id: Int
     var name: String
+    var tagline: String
     var imageUrl: String
-    var abv: String
+    var description: String
+    var abv: Double
+    var ibu: Double
     
-    init(name: String = "Itaipava Premium", imageUrl: String = "www.google.com", abv: String = "5/10"){
+    init(name: String = "Itaipava Premium",
+         imageUrl: String = "www.google.com",
+         abv: Double = 5.0,
+         ibu: Double = 50.0,
+         description: String = "Description...",
+         tagline: String = "Very good!"
+        ){
+        self.id = 1
         self.name = name
         self.imageUrl = imageUrl
         self.abv = abv
+        self.ibu = ibu
+        self.description = description
+        self.tagline = tagline
     }
     
 }

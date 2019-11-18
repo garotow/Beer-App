@@ -7,17 +7,24 @@
 //
 
 import Foundation
-
+import RxSwift
 
 protocol BeerListPresenterProtocol {
     func getBeers()
 }
 
 struct BeerListPresenter: BeerListPresenterProtocol {
+    var disposeBag = DisposeBag()
     weak var view: BeerListViewProtocol?
+    let beerRepository: BeerRepository
     
     func getBeers() {
-        let beers: [Beer] = [Beer(), Beer(), Beer()]
-        view?.displayBeerList(beers: beers)
+        beerRepository.getBeerList()
+            .do(onSuccess: { beerList in
+                self.view?.displayBeerList(beers: beerList)
+            })
+            .subscribe()
+            .disposed(by: disposeBag)
+        
     }
 }
