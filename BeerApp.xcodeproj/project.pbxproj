@@ -27,6 +27,10 @@
 		3A3F130223821DB600B46836 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F130123821DB600B46836 /* Extensions.swift */; };
 		3A3F130623821F0000B46836 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F130423821F0000B46836 /* BeerTableViewCell.swift */; };
 		3A3F130723821F0000B46836 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F130523821F0000B46836 /* BeerTableViewCell.xib */; };
+		3A3F1309238222E700B46836 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F1308238222E700B46836 /* Beer.swift */; };
+		3A3F130B238225BF00B46836 /* BeerListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F130A238225BF00B46836 /* BeerListPresenter.swift */; };
+		3A3F130E2382302400B46836 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F130C2382302400B46836 /* BeerDetailViewController.swift */; };
+		3A3F130F2382302400B46836 /* BeerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F130D2382302400B46836 /* BeerDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		3A3F130123821DB600B46836 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3A3F130423821F0000B46836 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		3A3F130523821F0000B46836 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
+		3A3F1308238222E700B46836 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		3A3F130A238225BF00B46836 /* BeerListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListPresenter.swift; sourceTree = "<group>"; };
+		3A3F130C2382302400B46836 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		3A3F130D2382302400B46836 /* BeerDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				3A3F130323821ECA00B46836 /* BeerCell */,
+				3A3F130A238225BF00B46836 /* BeerListPresenter.swift */,
 				3A3F12C42381B1D400B46836 /* BeerListViewController.swift */,
 				3A3F12FD23821BFC00B46836 /* BeerListAdapter.swift */,
 			);
@@ -130,6 +139,8 @@
 		3A3F12D62381BE8E00B46836 /* Beer Detail */ = {
 			isa = PBXGroup;
 			children = (
+				3A3F130C2382302400B46836 /* BeerDetailViewController.swift */,
+				3A3F130D2382302400B46836 /* BeerDetailViewController.xib */,
 			);
 			path = "Beer Detail";
 			sourceTree = "<group>";
@@ -144,6 +155,7 @@
 		3A3F12D82381BF3100B46836 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3A3F1308238222E700B46836 /* Beer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A3F130723821F0000B46836 /* BeerTableViewCell.xib in Resources */,
+				3A3F130F2382302400B46836 /* BeerDetailViewController.xib in Resources */,
 				3A3F12CD2381B1D600B46836 /* LaunchScreen.storyboard in Resources */,
 				3A3F12CA2381B1D600B46836 /* Assets.xcassets in Resources */,
 			);
@@ -300,7 +313,10 @@
 				3A3F130623821F0000B46836 /* BeerTableViewCell.swift in Sources */,
 				3A3F12C52381B1D400B46836 /* BeerListViewController.swift in Sources */,
 				3A3F12C12381B1D400B46836 /* AppDelegate.swift in Sources */,
+				3A3F130B238225BF00B46836 /* BeerListPresenter.swift in Sources */,
 				3A3F12C32381B1D400B46836 /* SceneDelegate.swift in Sources */,
+				3A3F1309238222E700B46836 /* Beer.swift in Sources */,
+				3A3F130E2382302400B46836 /* BeerDetailViewController.swift in Sources */,
 				3A3F12FE23821BFC00B46836 /* BeerListAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
