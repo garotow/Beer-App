@@ -6,11 +6,12 @@
 //  Copyright © 2019 Henrique Lima. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class BeerDetailConfigurator {
-    
-    static func getViewController() {
-        
+    static func getViewController(with beer: Beer) -> UIViewController {
+        let vc = BeerDetailViewController()
+        vc.currentBeer = beer
+        return vc
     }
 }

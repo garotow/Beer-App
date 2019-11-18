@@ -9,8 +9,9 @@
 import UIKit
 
 final class BeerListConfigurator {
-    
-    static func getViewController() {
-        
+    static func getViewController() -> UIViewController {
+        let beerListVC = BeerListViewController()
+        beerListVC.presenter = BeerListPresenter(view: beerListVC, beerRepository: BeerRepository())
+        return beerListVC
     }
 }

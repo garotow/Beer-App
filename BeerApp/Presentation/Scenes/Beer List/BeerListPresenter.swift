@@ -15,7 +15,6 @@ protocol BeerListPresenterProtocol {
 
 struct BeerListPresenter: BeerListPresenterProtocol {
     var disposeBag = DisposeBag()
-    
     weak var view: BeerListViewProtocol?
     let beerRepository: BeerRepository
     

@@ -10,7 +10,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-
 class BeerListAdapter: NSObject, UITableViewDelegate, UITableViewDataSource {
     var tableView: UITableView
     var dataSource: [Beer] = []
@@ -55,5 +54,4 @@ class BeerListAdapter: NSObject, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0
     }
-    
 }

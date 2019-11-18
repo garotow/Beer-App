@@ -13,32 +13,28 @@ protocol BeerListViewProtocol: class {
     func displayBeerList(beers: [Beer])
 }
 
-
 class BeerListViewController: UIViewController {
     var disposeBag = DisposeBag()
-    let tableView: UITableView = UITableView()
+    
+    lazy var tableView: UITableView = {
+        let table = UITableView()
+        table.indicatorStyle = .default
+        return table
+    }()
+    
+    lazy var adapter: BeerListAdapter = { BeerListAdapter(tableView: tableView) }()
+    
+    // Injected
     var presenter: BeerListPresenterProtocol!
-    var adapter: BeerListAdapter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = BeerListPresenter(view: self, beerRepository: BeerRepository()) as BeerListPresenterProtocol
-        adapter = BeerListAdapter(tableView: tableView)
         setupUI()
         setupObservables()
         presenter.getBeers()
     }
     
-    func setupObservables() {
-        adapter.onBeerSelected
-            .do(onNext: { [unowned self] beer in
-                self.navigateToDetails()
-            })
-            .subscribe()
-            .disposed(by: disposeBag)
-    }
-    
-    func setupUI() {
+    private func setupUI() {
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         // Add full screen constraints
@@ -50,8 +46,18 @@ class BeerListViewController: UIViewController {
         ])
     }
     
-    func navigateToDetails() {
-        self.navigationController?.pushViewController(BeerDetailViewController(), animated: true)
+    private func setupObservables() {
+        adapter.onBeerSelected
+            .do(onNext: { [unowned self] beer in
+                self.navigateToDetails(selectedBeer: beer)
+            })
+            .subscribe()
+            .disposed(by: disposeBag)
+    }
+
+    private func navigateToDetails(selectedBeer beer: Beer) {
+        let beerDetailVC = BeerDetailConfigurator.getViewController(with: beer)
+        self.navigationController?.pushViewController(beerDetailVC, animated: true)
     }
 }
 
@@ -60,4 +66,3 @@ extension BeerListViewController: BeerListViewProtocol {
         adapter.setData(beers)
     }
 }
-

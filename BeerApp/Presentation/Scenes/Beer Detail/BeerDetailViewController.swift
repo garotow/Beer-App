@@ -7,14 +7,11 @@
 //
 
 import UIKit
-
-
-protocol BeerDetailViewProtocol: class {
-    func displayBeer(beer: Beer)
-}
+import Kingfisher
 
 class BeerDetailViewController: UIViewController {
-    var presenter: BeerDetailPresenterProtocol!
+    // Injected
+    var currentBeer: Beer!
     
     @IBOutlet var beerImage: UIImageView!
     @IBOutlet var nameLabel: UILabel!
@@ -25,18 +22,20 @@ class BeerDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // displayBeer(beer: Beer(id: 3, name: "", tagline: "", imageUrl: "", description: "", abv: 3.0, ibu: 3))
+        setupUI()
     }
-
-}
-
-extension BeerDetailViewController: BeerDetailViewProtocol {
-    func displayBeer(beer: Beer) {
-        title = beer.name
-        nameLabel.text = beer.name
-        taglineLabel.text = beer.tagline
-        abvLabel.text = "\(beer.abv)"
+    
+    func setupUI() {
+        title = currentBeer.name
+        nameLabel.text = currentBeer.name
+        taglineLabel.text = currentBeer.tagline
+        abvLabel.text = "\(currentBeer.abv)"
         ibuLabel.text = "3"
-        descriptionLabel.text = beer.description
+        descriptionLabel.text = currentBeer.description
+        beerImage.kf.setImage(with: URL(string: currentBeer.imageUrl))
     }
 }
+
+
+
+

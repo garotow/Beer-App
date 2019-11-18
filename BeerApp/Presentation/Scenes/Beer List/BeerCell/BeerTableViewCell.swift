@@ -28,7 +28,4 @@ class BeerTableViewCell: UITableViewCell {
         abvLabel.text = "\(beer.abv)"
         productImage.kf.setImage(with: URL(string: beer.imageUrl))
     }
-    
-    
-    
 }

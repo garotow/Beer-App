@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let rootVc = BeerListViewController(nibName: nil, bundle: nil)
+        let rootVc = BeerListConfigurator.getViewController()
         let navigationController = UINavigationController(rootViewController: rootVc)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
