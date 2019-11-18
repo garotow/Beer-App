@@ -11,12 +11,9 @@ import RxMoya
 import RxSwift
 
 class BeerRepository {
+    let provider =  MoyaProvider<BeerProvider>()
     
     func getBeerList() -> Single<[Beer]> {
-        Single.just([Beer(), Beer(), Beer()])
-    }
-    
-    func getBeerDetail(id: Int) -> Single<Beer> {
-        Single.just(Beer())
+        return provider.rx.request(.getBeerList).map([Beer].self)
     }
 }

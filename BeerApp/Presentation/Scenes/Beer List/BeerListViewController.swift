@@ -39,7 +39,6 @@ class BeerListViewController: UIViewController {
     }
     
     func setupUI() {
-        tableView.allowsSelection = false
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         // Add full screen constraints

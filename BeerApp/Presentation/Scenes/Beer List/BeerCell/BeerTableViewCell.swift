@@ -20,12 +20,13 @@ class BeerTableViewCell: UITableViewCell {
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        super.setSelected(false, animated: animated)
     }
     
     func configure(with beer: Beer) {
         nameLabel.text = beer.name
         abvLabel.text = "\(beer.abv)"
+        productImage.kf.setImage(with: URL(string: beer.imageUrl))
     }
     
     

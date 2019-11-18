@@ -35,6 +35,7 @@
 		3A3F13132383313300B46836 /* BeerListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F13122383313300B46836 /* BeerListConfigurator.swift */; };
 		3A3F1315238331AD00B46836 /* BeerDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F1314238331AD00B46836 /* BeerDetailConfigurator.swift */; };
 		3A3F1317238331E700B46836 /* BeerDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F1316238331E700B46836 /* BeerDetailPresenter.swift */; };
+		3A3F13192383384C00B46836 /* BeerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F13182383384C00B46836 /* BeerProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		3A3F13122383313300B46836 /* BeerListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListConfigurator.swift; sourceTree = "<group>"; };
 		3A3F1314238331AD00B46836 /* BeerDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailConfigurator.swift; sourceTree = "<group>"; };
 		3A3F1316238331E700B46836 /* BeerDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailPresenter.swift; sourceTree = "<group>"; };
+		3A3F13182383384C00B46836 /* BeerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				3A3F131023832F9600B46836 /* BeerRepository.swift */,
+				3A3F13182383384C00B46836 /* BeerProvider.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				3A3F130B238225BF00B46836 /* BeerListPresenter.swift in Sources */,
 				3A3F1317238331E700B46836 /* BeerDetailPresenter.swift in Sources */,
 				3A3F12C32381B1D400B46836 /* SceneDelegate.swift in Sources */,
+				3A3F13192383384C00B46836 /* BeerProvider.swift in Sources */,
 				3A3F1315238331AD00B46836 /* BeerDetailConfigurator.swift in Sources */,
 				3A3F1309238222E700B46836 /* Beer.swift in Sources */,
 				3A3F130E2382302400B46836 /* BeerDetailViewController.swift in Sources */,

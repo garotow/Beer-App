@@ -25,7 +25,7 @@ class BeerDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayBeer(beer: Beer())
+       // displayBeer(beer: Beer(id: 3, name: "", tagline: "", imageUrl: "", description: "", abv: 3.0, ibu: 3))
     }
 
 }
@@ -36,7 +36,7 @@ extension BeerDetailViewController: BeerDetailViewProtocol {
         nameLabel.text = beer.name
         taglineLabel.text = beer.tagline
         abvLabel.text = "\(beer.abv)"
-        ibuLabel.text = "\(beer.ibu)"
+        ibuLabel.text = "3"
         descriptionLabel.text = beer.description
     }
 }

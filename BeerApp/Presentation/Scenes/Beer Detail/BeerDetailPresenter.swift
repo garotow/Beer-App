@@ -17,6 +17,6 @@ struct BeerDetailPresenter: BeerDetailPresenterProtocol {
     let beerRepository: BeerRepository
     
     func getBeerDetail(id: Int) {
-        view?.displayBeer(beer: Beer())
+     //   view?.displayBeer(beer: Beer(id: 3, name: "", tagline: "", imageUrl: "", description: "", abv: 3.0)
     }
 }
