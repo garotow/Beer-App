@@ -3,6 +3,4 @@ A simple app to learn more about beers!
 
 
 Frameworks:
-RxSwift
-Kingfisher
-Moya
+RxSwift, Kingfisher, Moya
