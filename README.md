@@ -2,5 +2,11 @@
 A simple app to learn more about beers! 
 
 
-Frameworks:
-RxSwift, Kingfisher, Moya
+## Screenshots
+:-------------------------:|:-------------------------:|
+![](/s1.png)  |  ![](/s2.png) 
+
+## Frameworks
+* RxSwift
+* Kingfisher
+* Moya
