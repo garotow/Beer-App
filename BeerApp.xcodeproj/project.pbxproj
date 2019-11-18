@@ -9,19 +9,49 @@
 /* Begin PBXBuildFile section */
 		3A3F12C12381B1D400B46836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F12C02381B1D400B46836 /* AppDelegate.swift */; };
 		3A3F12C32381B1D400B46836 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F12C22381B1D400B46836 /* SceneDelegate.swift */; };
-		3A3F12C52381B1D400B46836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F12C42381B1D400B46836 /* ViewController.swift */; };
+		3A3F12C52381B1D400B46836 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F12C42381B1D400B46836 /* BeerListViewController.swift */; };
 		3A3F12CA2381B1D600B46836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F12C92381B1D600B46836 /* Assets.xcassets */; };
 		3A3F12CD2381B1D600B46836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F12CB2381B1D600B46836 /* LaunchScreen.storyboard */; };
+		3A3F12DC2382159C00B46836 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12DB2382159C00B46836 /* Alamofire.framework */; };
+		3A3F12E02382159F00B46836 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12DF2382159F00B46836 /* Kingfisher.framework */; };
+		3A3F12E3238215A500B46836 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12E2238215A500B46836 /* Moya.framework */; };
+		3A3F12E6238215AA00B46836 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12E5238215AA00B46836 /* ReactiveMoya.framework */; };
+		3A3F12E9238215B200B46836 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12E8238215B200B46836 /* ReactiveSwift.framework */; };
+		3A3F12EC238215B400B46836 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12EB238215B400B46836 /* Result.framework */; };
+		3A3F12EF238215B600B46836 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12EE238215B600B46836 /* RxBlocking.framework */; };
+		3A3F12F2238215F700B46836 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12F1238215F700B46836 /* RxCocoa.framework */; };
+		3A3F12F5238215F900B46836 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12F4238215F900B46836 /* RxMoya.framework */; };
+		3A3F12F8238215FE00B46836 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12F7238215FE00B46836 /* RxSwift.framework */; };
+		3A3F12FB238215FF00B46836 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F12FA238215FF00B46836 /* RxRelay.framework */; };
+		3A3F12FE23821BFC00B46836 /* BeerListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F12FD23821BFC00B46836 /* BeerListAdapter.swift */; };
+		3A3F130223821DB600B46836 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F130123821DB600B46836 /* Extensions.swift */; };
+		3A3F130623821F0000B46836 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F130423821F0000B46836 /* BeerTableViewCell.swift */; };
+		3A3F130723821F0000B46836 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F130523821F0000B46836 /* BeerTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A3F12BD2381B1D400B46836 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3F12C02381B1D400B46836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A3F12C22381B1D400B46836 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A3F12C42381B1D400B46836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A3F12C42381B1D400B46836 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		3A3F12C92381B1D600B46836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A3F12CC2381B1D600B46836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A3F12CE2381B1D600B46836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3F12DB2382159C00B46836 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3A3F12DF2382159F00B46836 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		3A3F12E2238215A500B46836 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		3A3F12E5238215AA00B46836 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		3A3F12E8238215B200B46836 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		3A3F12EB238215B400B46836 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		3A3F12EE238215B600B46836 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		3A3F12F1238215F700B46836 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		3A3F12F4238215F900B46836 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		3A3F12F7238215FE00B46836 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		3A3F12FA238215FF00B46836 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		3A3F12FD23821BFC00B46836 /* BeerListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListAdapter.swift; sourceTree = "<group>"; };
+		3A3F130123821DB600B46836 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3A3F130423821F0000B46836 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		3A3F130523821F0000B46836 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +59,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3F12F8238215FE00B46836 /* RxSwift.framework in Frameworks */,
+				3A3F12EF238215B600B46836 /* RxBlocking.framework in Frameworks */,
+				3A3F12E02382159F00B46836 /* Kingfisher.framework in Frameworks */,
+				3A3F12E3238215A500B46836 /* Moya.framework in Frameworks */,
+				3A3F12E9238215B200B46836 /* ReactiveSwift.framework in Frameworks */,
+				3A3F12F2238215F700B46836 /* RxCocoa.framework in Frameworks */,
+				3A3F12F5238215F900B46836 /* RxMoya.framework in Frameworks */,
+				3A3F12EC238215B400B46836 /* Result.framework in Frameworks */,
+				3A3F12DC2382159C00B46836 /* Alamofire.framework in Frameworks */,
+				3A3F12E6238215AA00B46836 /* ReactiveMoya.framework in Frameworks */,
+				3A3F12FB238215FF00B46836 /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +81,7 @@
 			children = (
 				3A3F12BF2381B1D400B46836 /* BeerApp */,
 				3A3F12BE2381B1D400B46836 /* Products */,
+				3A3F12DA2382159C00B46836 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,9 +96,9 @@
 		3A3F12BF2381B1D400B46836 /* BeerApp */ = {
 			isa = PBXGroup;
 			children = (
+				3A3F12FF23821D8C00B46836 /* Presentation */,
 				3A3F12D82381BF3100B46836 /* Model */,
 				3A3F12D72381BF2600B46836 /* Data */,
-				3A3F12D42381BE7500B46836 /* Scenes */,
 				3A3F12C02381B1D400B46836 /* AppDelegate.swift */,
 				3A3F12C22381B1D400B46836 /* SceneDelegate.swift */,
 				3A3F12C92381B1D600B46836 /* Assets.xcassets */,
@@ -78,7 +120,9 @@
 		3A3F12D52381BE7E00B46836 /* Beer List */ = {
 			isa = PBXGroup;
 			children = (
-				3A3F12C42381B1D400B46836 /* ViewController.swift */,
+				3A3F130323821ECA00B46836 /* BeerCell */,
+				3A3F12C42381B1D400B46836 /* BeerListViewController.swift */,
+				3A3F12FD23821BFC00B46836 /* BeerListAdapter.swift */,
 			);
 			path = "Beer List";
 			sourceTree = "<group>";
@@ -104,6 +148,50 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3A3F12DA2382159C00B46836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A3F12FA238215FF00B46836 /* RxRelay.framework */,
+				3A3F12F7238215FE00B46836 /* RxSwift.framework */,
+				3A3F12F4238215F900B46836 /* RxMoya.framework */,
+				3A3F12F1238215F700B46836 /* RxCocoa.framework */,
+				3A3F12EE238215B600B46836 /* RxBlocking.framework */,
+				3A3F12EB238215B400B46836 /* Result.framework */,
+				3A3F12E8238215B200B46836 /* ReactiveSwift.framework */,
+				3A3F12E5238215AA00B46836 /* ReactiveMoya.framework */,
+				3A3F12E2238215A500B46836 /* Moya.framework */,
+				3A3F12DF2382159F00B46836 /* Kingfisher.framework */,
+				3A3F12DB2382159C00B46836 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A3F12FF23821D8C00B46836 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3A3F130023821D9E00B46836 /* Common */,
+				3A3F12D42381BE7500B46836 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3A3F130023821D9E00B46836 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3A3F130123821DB600B46836 /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3A3F130323821ECA00B46836 /* BeerCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A3F130423821F0000B46836 /* BeerTableViewCell.swift */,
+				3A3F130523821F0000B46836 /* BeerTableViewCell.xib */,
+			);
+			path = BeerCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,6 +202,7 @@
 				3A3F12B92381B1D400B46836 /* Sources */,
 				3A3F12BA2381B1D400B46836 /* Frameworks */,
 				3A3F12BB2381B1D400B46836 /* Resources */,
+				3A3F12D92382154E00B46836 /* Run Script Carthage */,
 			);
 			buildRules = (
 			);
@@ -162,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3F130723821F0000B46836 /* BeerTableViewCell.xib in Resources */,
 				3A3F12CD2381B1D600B46836 /* LaunchScreen.storyboard in Resources */,
 				3A3F12CA2381B1D600B46836 /* Assets.xcassets in Resources */,
 			);
@@ -169,14 +259,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A3F12D92382154E00B46836 /* Run Script Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+			);
+			name = "Run Script Carthage";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A3F12B92381B1D400B46836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3F12C52381B1D400B46836 /* ViewController.swift in Sources */,
+				3A3F130223821DB600B46836 /* Extensions.swift in Sources */,
+				3A3F130623821F0000B46836 /* BeerTableViewCell.swift in Sources */,
+				3A3F12C52381B1D400B46836 /* BeerListViewController.swift in Sources */,
 				3A3F12C12381B1D400B46836 /* AppDelegate.swift in Sources */,
 				3A3F12C32381B1D400B46836 /* SceneDelegate.swift in Sources */,
+				3A3F12FE23821BFC00B46836 /* BeerListAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +439,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78P3GTBB46;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BeerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,6 +461,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78P3GTBB46;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BeerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
