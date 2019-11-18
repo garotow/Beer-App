@@ -29,8 +29,8 @@ class BeerDetailViewController: UIViewController {
         title = currentBeer.name
         nameLabel.text = currentBeer.name
         taglineLabel.text = currentBeer.tagline
-        abvLabel.text = "\(currentBeer.abv)"
-        ibuLabel.text = "3"
+        abvLabel.text = "Alcohol by Volume: \(currentBeer.abv)%"
+        ibuLabel.text = "IBU: " + (currentBeer.ibu != nil ? "\(currentBeer.ibu!)" : "-")
         descriptionLabel.text = currentBeer.description
         beerImage.kf.setImage(with: URL(string: currentBeer.imageUrl))
     }

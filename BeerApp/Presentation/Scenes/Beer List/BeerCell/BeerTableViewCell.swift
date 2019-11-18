@@ -14,9 +14,11 @@ class BeerTableViewCell: UITableViewCell {
     @IBOutlet var productImage: UIImageView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var abvLabel: UILabel!
+    @IBOutlet var cardView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        cardView.layer.cornerRadius = 5.0
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -25,7 +27,7 @@ class BeerTableViewCell: UITableViewCell {
     
     func configure(with beer: Beer) {
         nameLabel.text = beer.name
-        abvLabel.text = "\(beer.abv)"
+        abvLabel.text = "\(beer.abv)%"
         productImage.kf.setImage(with: URL(string: beer.imageUrl))
     }
 }

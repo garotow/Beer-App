@@ -18,7 +18,8 @@ class BeerListViewController: UIViewController {
     
     lazy var tableView: UITableView = {
         let table = UITableView()
-        table.indicatorStyle = .default
+        table.separatorStyle = .none
+        table.backgroundColor = .clear
         return table
     }()
     
@@ -35,6 +36,9 @@ class BeerListViewController: UIViewController {
     }
     
     private func setupUI() {
+        title = "Beer App"
+        view.backgroundColor = UIColor(hex: 0xF4F7B3)
+        
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         // Add full screen constraints
